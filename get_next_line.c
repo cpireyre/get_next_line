@@ -6,7 +6,7 @@
 /*   By: cpireyre <cpireyre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 10:20:41 by cpireyre          #+#    #+#             */
-/*   Updated: 2018/05/10 13:00:00 by cpireyre         ###   ########.fr       */
+/*   Updated: 2018/05/10 14:21:29 by cpireyre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,8 @@ int			get_next_line(const int fd, char **line)
 		if (ret < 0 || (buf[ret] = 0))
 			return (-1);
 		free_cat(&tmp->str, buf);
-		if (*(tmp->str) && (ft_strchr(tmp->str, SPLIT) || ret < BUFF_SIZE))
+		if (tmp->str && *(tmp->str) && (ft_strchr(tmp->str, SPLIT)
+					|| ret < BUFF_SIZE))
 		{
 			get_one_line(&(tmp->str), line);
 			return (1);
