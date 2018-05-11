@@ -18,7 +18,10 @@ static void	free_cat(char **gnl, char *tmp)
 
 	if (!tmp || !(*tmp))
 		return ;
-	combined_size = ft_strlen(*gnl) + ft_strlen(tmp);
+	combined_size = 0;
+	if (gnl && *gnl)
+		combined_size += ft_strlen(*gnl);
+	combined_size += ft_strlen(tmp);
 	*gnl = ft_realloc(*gnl, combined_size + 1);
 	*gnl = ft_strcat(*gnl, tmp);
 }
