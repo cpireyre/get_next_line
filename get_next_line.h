@@ -6,14 +6,14 @@
 /*   By: cpireyre <cpireyre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 12:33:30 by cpireyre          #+#    #+#             */
-/*   Updated: 2018/05/13 09:25:47 by cpireyre         ###   ########.fr       */
+/*   Updated: 2018/05/13 12:55:33 by cpireyre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# define BUFF_SIZE 500
+# define BUFF_SIZE 1
 # define SPLIT '\n'
 # include "./libft/libft.h"
 # include <stdlib.h>
