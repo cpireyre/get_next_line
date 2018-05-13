@@ -6,7 +6,7 @@
 /*   By: cpireyre <cpireyre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 10:20:41 by cpireyre          #+#    #+#             */
-/*   Updated: 2018/05/10 14:21:29 by cpireyre         ###   ########.fr       */
+/*   Updated: 2018/05/13 08:04:00 by cpireyre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ static void	get_one_line(char **gnl, char **line)
 	}
 	else
 	{
-		split = ft_strlen(*gnl);
 		*line = ft_strdup(*gnl);
 		ft_strdel(gnl);
 	}
