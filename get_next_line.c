@@ -6,7 +6,7 @@
 /*   By: cpireyre <cpireyre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 10:20:41 by cpireyre          #+#    #+#             */
-/*   Updated: 2018/05/13 08:04:00 by cpireyre         ###   ########.fr       */
+/*   Updated: 2018/05/13 09:25:21 by cpireyre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	free_cat(char **gnl, char *tmp)
 	if (gnl && *gnl)
 		combined_size += ft_strlen(*gnl);
 	combined_size += ft_strlen(tmp);
-	*gnl = ft_realloc(*gnl, combined_size + 1);
+	*gnl = ft_strrealloc(*gnl, combined_size);
 	*gnl = ft_strcat(*gnl, tmp);
 }
 
